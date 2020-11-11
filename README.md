@@ -1,6 +1,8 @@
 
 Należy zaimplementować klasę reprezentującą macierz elementów double. Klasa ma mieć następujące metody:
 
+DONE: 1, 9
+
 1. Dwa konstruktory:
 -przyjmujący dwa argumenty typu int tworzący macierz o podanych wymiarach zainicjalizowaną zerami
 -przyjmujący jeden argument typu int tworzący macierz kwadratową o podanym rozmiarze zainicjalizowaną zerami
