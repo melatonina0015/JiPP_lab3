@@ -1,32 +1,12 @@
 #include <iostream>
 #include <cstdlib>
+#include "matrixclass.cpp"
 
-class matrix{
-
-    public:
-    int **matrixTab;
-    matrix(int n, int m)
-    {
-        matrixTab = new int *[n];
-        for(int i = 0; i < n; i++)
-        {
-            matrixTab[i] = new int [m];
-        }
-    }
-    matrix(int n)
-    {
-        matrixTab = new int *[n];
-        for(int i = 0; i < n; i++)
-        {
-            matrixTab[i] = new int [n];
-        }
-    }
-
-
-};
+using namespace std;
 
 int main()
 {
-    matrix myObj(5);
+    matrix myObj(4);
+    myObj.print();
     return 0;
 }
