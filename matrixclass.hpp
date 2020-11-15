@@ -1,7 +1,8 @@
 #ifndef matrixclass_hpp
 #define matrixclass_hpp
 
-class matrix{
+class matrix
+{
 
     private:
 
@@ -12,12 +13,14 @@ class matrix{
 
     matrix(int n, int m);
     matrix(int n);
-    void print();
     void set(int n, int m, int val);
     int get(int n, int m);
+    void add(matrix m2);
+    void multiply(matrix m2);
+    void subtract(matrix m2);
     int cols();
     int rows();
-
+    void print();
 };
 
 #endif
