@@ -1,7 +1,10 @@
 
 Należy zaimplementować klasę reprezentującą macierz elementów double. Klasa ma mieć następujące metody:
 
-DONE: 1, 2, 3, 7, 8, 9
+DONE: 1, 2, 3, 4, 5, 6, 7, 8, 9
+DO TO: 
+- exceptions for mathematical operations(matrix sizes)
+- exceptions for variable types
 
 1. Dwa konstruktory:
 -przyjmujący dwa argumenty typu int tworzący macierz o podanych wymiarach zainicjalizowaną zerami
