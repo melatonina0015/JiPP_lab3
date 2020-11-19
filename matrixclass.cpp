@@ -1,54 +1,10 @@
 #include <iostream>
+#include <fstream>
+#include <string.h>
+#include <string>
 #include "matrixclass.hpp"
 
 using namespace std;
-
-/*class matrix{
-
-    int **matrixTab;
-    int c, r;
-    public:
-    matrix(int n, int m)
-    {
-        c = n;
-        r = m;
-        matrixTab = new int *[m];
-        for(int i = 0; i < m; i++)
-        {
-            matrixTab[i] = new int [n]; 
-            for(int j = 0; j < n; j++)
-            {
-                matrixTab[i][j] = 0;
-            }    
-        }
-    }
-    matrix(int n)
-    {
-        c = n;
-        r = n;
-        matrixTab = new int *[n];
-        for(int i = 0; i < n; i++)
-        {
-            matrixTab[i] = new int [n];
-            for(int j = 0; j < n; j++)
-            {
-                matrixTab[i][j] = 0;
-            }
-        }
-    }
-
-    void print()
-    {
-        for(int i = 0; i < r; i++)
-        {
-            for(int j = 0; j < c; j++)
-            {
-                cout << matrixTab[i][j] << " ";
-            }
-            cout << endl;
-        }
-    }
-};*/
 
 matrix::matrix(int n, int m)
 {
@@ -77,6 +33,21 @@ matrix::matrix(int n)
         {
             matrixTab[i][j] = 0;
         }
+    }
+}
+
+matrix::matrix(std::string filename)
+{
+    ifstream file(filename);
+    file >> r >> c;
+    matrixTab = new int *[c];
+    for(int i = 0; i < r; i++)
+    {
+        matrixTab[i] = new int [r]; 
+        for(int j = 0; j < c; j++)
+        {
+            file >> matrixTab[i][j];
+        }    
     }
 }
 
@@ -147,7 +118,7 @@ int matrix::rows()
 
 void matrix::print()
 {   
-    cout << "--PRINTING MATRIX--\n";
+    //cout << "--YOUR MATRIX--\n";
     cout.width(4);
     cout << "";
     for(int i = 0; i < c; i++)
@@ -170,4 +141,37 @@ void matrix::print()
         cout << endl;
     }   
     
+}
+
+void matrix::store(std::string filename, std::string path)
+{
+    path = path + "\\" + filename; 
+    ofstream file(path);
+    file << r << ' ' << c << endl;
+
+    for(int i = 0; i < r; i++)
+    {
+        for(int j = 0; j < c; j++)
+        {
+            int a = matrixTab[i][j];
+            file << a << " ";
+        }
+        file << endl;
+    }
+}
+
+void matrix::store(std::string filename)
+{ 
+    ofstream file(filename);
+    file << r << ' ' << c << endl;
+
+    for(int i = 0; i < r; i++)
+    {
+        for(int j = 0; j < c; j++)
+        {
+            int a = matrixTab[i][j];
+            file << a << " ";
+        }
+        file << endl;
+    }
 }
