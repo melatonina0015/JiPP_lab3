@@ -10,11 +10,11 @@ matrix::matrix(int n, int m)
 {
     r = n;
     c = m;
-    matrixTab = new int *[m];
-    for(int i = 0; i < r; i++)
+    matrixTab = new int *[n];
+    for(int i = 0; i < n; i++)
     {
-        matrixTab[i] = new int [n]; 
-        for(int j = 0; j < c; j++)
+        matrixTab[i] = new int [m]; 
+        for(int j = 0; j < m; j++)
         {
             matrixTab[i][j] = 0;
         }    
@@ -40,10 +40,10 @@ matrix::matrix(std::string filename)
 {
     ifstream file(filename);
     file >> r >> c;
-    matrixTab = new int *[c];
+    matrixTab = new int *[r];
     for(int i = 0; i < r; i++)
     {
-        matrixTab[i] = new int [r]; 
+        matrixTab[i] = new int [c]; 
         for(int j = 0; j < c; j++)
         {
             file >> matrixTab[i][j];
