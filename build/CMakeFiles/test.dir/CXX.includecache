@@ -6,13 +6,25 @@
 
 #IncludeRegexTransform: 
 
-../include/Lab_3/matrixclass.hpp
+../include/JiPP_lab3/matrixclass.hpp
 string.h
 -
 string
 -
 
-D:/Amelia/Studia/Semestr III/JiPP/Lab_3/src/zad_1.cpp
+D:/Amelia/Studia/Semestr III/JiPP/JiPP_lab3/src/matrixclass.cpp
+iostream
+-
+fstream
+-
+string.h
+-
+string
+-
+matrixclass.hpp
+-
+
+D:/Amelia/Studia/Semestr III/JiPP/JiPP_lab3/src/zad_1.cpp
 iostream
 -
 cstdlib

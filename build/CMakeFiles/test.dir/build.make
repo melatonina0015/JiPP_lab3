@@ -61,10 +61,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "D:\Amelia\Studia\Semestr III\JiPP\Lab_3"
+CMAKE_SOURCE_DIR = "D:\Amelia\Studia\Semestr III\JiPP\JiPP_lab3"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "D:\Amelia\Studia\Semestr III\JiPP\Lab_3\build"
+CMAKE_BINARY_DIR = "D:\Amelia\Studia\Semestr III\JiPP\JiPP_lab3\build"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test.dir/depend.make
@@ -78,30 +78,30 @@ include CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/zad_1.cpp.obj: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/zad_1.cpp.obj: CMakeFiles/test.dir/includes_CXX.rsp
 CMakeFiles/test.dir/src/zad_1.cpp.obj: ../src/zad_1.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Amelia\Studia\Semestr III\JiPP\Lab_3\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/src/zad_1.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\test.dir\src\zad_1.cpp.obj -c "D:\Amelia\Studia\Semestr III\JiPP\Lab_3\src\zad_1.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Amelia\Studia\Semestr III\JiPP\JiPP_lab3\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/src/zad_1.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\test.dir\src\zad_1.cpp.obj -c "D:\Amelia\Studia\Semestr III\JiPP\JiPP_lab3\src\zad_1.cpp"
 
 CMakeFiles/test.dir/src/zad_1.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/zad_1.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Amelia\Studia\Semestr III\JiPP\Lab_3\src\zad_1.cpp" > CMakeFiles\test.dir\src\zad_1.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Amelia\Studia\Semestr III\JiPP\JiPP_lab3\src\zad_1.cpp" > CMakeFiles\test.dir\src\zad_1.cpp.i
 
 CMakeFiles/test.dir/src/zad_1.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/zad_1.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Amelia\Studia\Semestr III\JiPP\Lab_3\src\zad_1.cpp" -o CMakeFiles\test.dir\src\zad_1.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Amelia\Studia\Semestr III\JiPP\JiPP_lab3\src\zad_1.cpp" -o CMakeFiles\test.dir\src\zad_1.cpp.s
 
 CMakeFiles/test.dir/src/matrixclass.cpp.obj: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/matrixclass.cpp.obj: CMakeFiles/test.dir/includes_CXX.rsp
 CMakeFiles/test.dir/src/matrixclass.cpp.obj: ../src/matrixclass.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Amelia\Studia\Semestr III\JiPP\Lab_3\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/src/matrixclass.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\test.dir\src\matrixclass.cpp.obj -c "D:\Amelia\Studia\Semestr III\JiPP\Lab_3\src\matrixclass.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Amelia\Studia\Semestr III\JiPP\JiPP_lab3\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/src/matrixclass.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\test.dir\src\matrixclass.cpp.obj -c "D:\Amelia\Studia\Semestr III\JiPP\JiPP_lab3\src\matrixclass.cpp"
 
 CMakeFiles/test.dir/src/matrixclass.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/matrixclass.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Amelia\Studia\Semestr III\JiPP\Lab_3\src\matrixclass.cpp" > CMakeFiles\test.dir\src\matrixclass.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Amelia\Studia\Semestr III\JiPP\JiPP_lab3\src\matrixclass.cpp" > CMakeFiles\test.dir\src\matrixclass.cpp.i
 
 CMakeFiles/test.dir/src/matrixclass.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/matrixclass.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Amelia\Studia\Semestr III\JiPP\Lab_3\src\matrixclass.cpp" -o CMakeFiles\test.dir\src\matrixclass.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Amelia\Studia\Semestr III\JiPP\JiPP_lab3\src\matrixclass.cpp" -o CMakeFiles\test.dir\src\matrixclass.cpp.s
 
 # Object files for target test
 test_OBJECTS = \
@@ -117,7 +117,7 @@ test.exe: CMakeFiles/test.dir/build.make
 test.exe: CMakeFiles/test.dir/linklibs.rsp
 test.exe: CMakeFiles/test.dir/objects1.rsp
 test.exe: CMakeFiles/test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\Amelia\Studia\Semestr III\JiPP\Lab_3\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable test.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\Amelia\Studia\Semestr III\JiPP\JiPP_lab3\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable test.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\test.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -130,6 +130,6 @@ CMakeFiles/test.dir/clean:
 .PHONY : CMakeFiles/test.dir/clean
 
 CMakeFiles/test.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "D:\Amelia\Studia\Semestr III\JiPP\Lab_3" "D:\Amelia\Studia\Semestr III\JiPP\Lab_3" "D:\Amelia\Studia\Semestr III\JiPP\Lab_3\build" "D:\Amelia\Studia\Semestr III\JiPP\Lab_3\build" "D:\Amelia\Studia\Semestr III\JiPP\Lab_3\build\CMakeFiles\test.dir\DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "D:\Amelia\Studia\Semestr III\JiPP\JiPP_lab3" "D:\Amelia\Studia\Semestr III\JiPP\JiPP_lab3" "D:\Amelia\Studia\Semestr III\JiPP\JiPP_lab3\build" "D:\Amelia\Studia\Semestr III\JiPP\JiPP_lab3\build" "D:\Amelia\Studia\Semestr III\JiPP\JiPP_lab3\build\CMakeFiles\test.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/test.dir/depend
 

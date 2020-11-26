@@ -1,8 +1,8 @@
-# Install script for directory: D:/Amelia/Studia/Semestr III/JiPP/Lab_3
+# Install script for directory: D:/Amelia/Studia/Semestr III/JiPP/JiPP_lab3
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Lab_3")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/JiPP_lab3")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/Amelia/Studia/Semestr III/JiPP/Lab_3/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Amelia/Studia/Semestr III/JiPP/JiPP_lab3/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
