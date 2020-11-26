@@ -2,7 +2,7 @@
 #include <fstream>
 #include <string.h>
 #include <string>
-#include "matrixclass.hpp"
+#include <matrixclass.hpp>
 
 using namespace std;
 

@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Lab_3/matrixclass.hpp
+string.h
+-
+string
+-
+
+D:/Amelia/Studia/Semestr III/JiPP/Lab_3/src/zad_1.cpp
+iostream
+-
+cstdlib
+-
+windows.h
+-
+string.h
+-
+string
+-
+matrixclass.hpp
+-
+

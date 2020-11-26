@@ -3,7 +3,7 @@
 #include <windows.h>
 #include <string.h>
 #include <string>
-#include "matrixclass.cpp"
+#include <matrixclass.hpp>
 
 using namespace std;
 
