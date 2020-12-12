@@ -12,18 +12,6 @@ string.h
 string
 -
 
-D:/Amelia/Studia/Semestr III/JiPP/JiPP_lab3/src/matrixclass.cpp
-iostream
--
-fstream
--
-string.h
--
-string
--
-matrixclass.hpp
--
-
 D:/Amelia/Studia/Semestr III/JiPP/JiPP_lab3/src/zad_1.cpp
 iostream
 -
@@ -36,5 +24,7 @@ string.h
 string
 -
 matrixclass.hpp
+-
+typeinfo
 -
 

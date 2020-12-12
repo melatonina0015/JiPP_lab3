@@ -4,8 +4,17 @@
 #include <string.h>
 #include <string>
 #include <matrixclass.hpp>
+#include <typeinfo>
 
 using namespace std;
+
+class menuChoice: public exception
+{
+  virtual const char* what() const throw()
+  {
+    return "My exception accured";
+  }
+};
 
 int main()
 {
@@ -22,14 +31,34 @@ int main()
         {
             system("cls");
             cout << "Macierz kwadratowa (1), prostokatna (2) lub pobrana z pliku (3)\n";
-            cin >> choice;
+            try
+            {
+                cin >> choice;
+                if(choice < 1 || choice > 3) throw(choice);
+            }
+            catch(const exception& e)
+            {
+                std::cerr << e.what() << '\n';
+                Sleep(3000);
+            }
+            
+            
             switch(choice)
             {
                 case 1:
                 {
                     system("cls");
                     cout << "Podaj wymiar macierzy\n";
-                    cin >> n;
+                    try
+                    {
+                        cin >> n;
+                        if(typeid(n) != typeid(int)) throw n;
+                    }
+                    catch(const std::exception& e)
+                    {
+                        std::cerr << e.what() << '\n';
+                    }
+                    
                     matrix myObj(n);
                     while(true)
                     {   
@@ -46,7 +75,17 @@ int main()
                         myObj.print();
 
                         cout << "\nWybierz opcje: ";
-                        cin >> choice;
+                        try
+                        {
+                            cin >> choice;
+                            if(choice < 0 || choice > 8) throw(choice);
+                        }
+                        catch(const exception& e)
+                        {
+                            std::cerr << e.what() << '\n';
+                            Sleep(3000);
+                        }
+
                         switch (choice)
                         {
                         case 1:
@@ -249,7 +288,16 @@ int main()
                         myObj.print();
 
                         cout << "\nWybierz opcje: ";
-                        cin >> choice;
+                        try
+                        {
+                            cin >> choice;
+                            if(choice < 0 || choice > 8) throw(choice);
+                        }
+                        catch(const exception& e)
+                        {
+                            std::cerr << e.what() << '\n';
+                            Sleep(3000);
+                        }
                         switch (choice)
                         {
                         case 1:
@@ -452,7 +500,16 @@ int main()
                         myObj.print();
 
                         cout << "\nWybierz opcje: ";
-                        cin >> choice;
+                        try
+                        {
+                            cin >> choice;
+                            if(choice < 0 || choice > 8) throw(choice);
+                        }
+                        catch(const exception& e)
+                        {
+                            std::cerr << e.what() << '\n';
+                            Sleep(3000);
+                        }
                         switch (choice)
                         {
                         case 1:
@@ -636,6 +693,7 @@ int main()
                 default:
                 {
                     cout << "Podaj wlasciwa opcje!\n";
+                    Sleep(2000);
                     break;  
                 }
             }
