@@ -139,7 +139,9 @@ void matrix::print()
             cout << matrixTab[i][j] << " ";
         }
         cout << endl;
-    }   
+    }
+    cout << endl;
+    cout << endl; 
     
 }
 
@@ -173,5 +175,104 @@ void matrix::store(std::string filename)
             file << a << " ";
         }
         file << endl;
+    }
+}
+
+matrix matrix::operator +(matrix &b)
+{
+    matrix matrix_sum(rows(), cols());
+
+        for (int i = 0; i < rows(); i++)
+        {
+            for (int j = 0; j < cols(); j++)
+            {
+                matrix_sum.matrixTab[i][j] = matrixTab[i][j] + b.matrixTab[i][j];
+            }
+        }
+        return matrix_sum;
+}
+
+matrix matrix::operator -(matrix &b)
+{
+    matrix matrix_sum(rows(), cols());
+
+        for (int i = 0; i < rows(); i++)
+        {
+            for (int j = 0; j < cols(); j++)
+            {
+                matrix_sum.matrixTab[i][j] = matrixTab[i][j] - b.matrixTab[i][j];
+            }
+        }
+        return matrix_sum;
+}
+
+matrix matrix::operator *(matrix &b)
+{
+    matrix product(rows(), cols());
+    int s;
+    for(int i = 0; i < rows(); i++)
+    for(int j = 0; j < cols(); j++)
+    {
+      s = 0;
+      for(int k = 0; k < cols(); k++)
+      {
+        s += matrixTab[i][k] * b.matrixTab[k][j];
+      }
+      product.matrixTab[i][j] = s;
+    }
+    return product;
+}
+void matrix::operator [](int index)
+{
+    for(int i; i < cols(); i++) cout << matrixTab[index][i] << " ";
+    cout << endl;
+}
+bool matrix::operator ==(matrix &b)
+{
+    for(int i = 0; i < rows(); i++){
+        for(int j = 0; j < cols(); j++){
+            if(matrixTab[i][j] == b.matrixTab[i][j]) return true;
+            else return false;
+        }
+    }
+}
+void matrix::operator !()
+{
+    for(int i = 0; i < rows(); i++){
+        for(int j = 0; j < cols(); j++){
+            matrixTab[i][j] = -1 * matrixTab[i][j];
+        }
+    }
+}
+void matrix::operator ++()
+{
+    for(int i = 0; i < rows(); i++){
+        for(int j = 0; j < cols(); j++){
+            matrixTab[i][j]++;
+        }
+    }
+}
+/*void matrix::operator<<(ofstream &file)
+{
+    if (file.is_open())
+    {
+        file << rows() << " " << cols() << endl;
+        for (int i = 0; i < rows(); i++)
+        {
+            for (int j = 0; j < cols(); j++)
+            {
+                file << this->get(i, j) << " ";
+            }
+            file << "\n";
+        }
+        file.close();
+    }
+}*/
+void matrix::operator %(int value)
+{
+    for(int i = 0; i < rows(); i++){
+        for(int j = 0; j < cols(); j++){
+            matrixTab[i][j] = matrixTab[i][j] % value;
+        }
     }
 }

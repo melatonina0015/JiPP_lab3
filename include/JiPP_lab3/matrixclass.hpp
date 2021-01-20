@@ -26,6 +26,15 @@ class matrix
     void print();
     void store(std::string filename, std::string path);
     void store(std::string filename);
+    matrix operator +(matrix &b);
+    matrix operator -(matrix &b);
+    matrix operator *(matrix &b);
+    void operator [](int index);
+    bool operator ==(matrix &b);
+    //void operator <<(ofstream &file);
+    void operator !();
+    void operator ++();
+    void operator %(int value);
 };
 
 #endif

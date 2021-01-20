@@ -5,6 +5,7 @@
 #include <string>
 #include <matrixclass.hpp>
 #include <typeinfo>
+#include <fstream>
 
 using namespace std;
 
@@ -12,7 +13,7 @@ class menuChoice: public exception
 {
   virtual const char* what() const throw()
   {
-    return "My exception accured";
+    return "Zly wybor w menu";
   }
 };
 
@@ -30,11 +31,12 @@ int main()
         do 
         {
             system("cls");
-            cout << "Macierz kwadratowa (1), prostokatna (2) lub pobrana z pliku (3)\n";
+            cout << "Macierz kwadratowa (1), prostokatna (2) lub pobrana z pliku (3) | Prezentacja przeciazania operatorow (4)\n";
+            menuChoice Choice;
             try
             {
                 cin >> choice;
-                if(choice < 1 || choice > 3) throw(choice);
+                if(choice < 1 || choice > 4) throw(Choice);
             }
             catch(const exception& e)
             {
@@ -689,6 +691,87 @@ int main()
                 p = false;    
                 break;
                 }
+                case 4:
+                {
+                    matrix m1(4);
+                    matrix m2(4);
+                    m1.set(1,1,1);
+                    m1.set(2,2,2);
+                    m1.set(3,3,2);
+                    m1.set(4,4,3);
+                    m2.set(2,1,2);
+                    m2.set(2,2,3);
+                    m2.set(2,3,4);
+                    m2.set(2,4,5);
+                    m1.print();
+                    m2.print();
+                    system("pause");
+                    system("cls");
+                    cout << "Operator +\n";
+                    m1.print();
+                    m2.print();
+                    matrix sum = m1 + m2;
+                    sum.print();
+                    system("pause");
+                    system("cls");
+                    cout << "Operator -\n";
+                    m1.print();
+                    m2.print();
+                    matrix sub = m1 - m2;
+                    sub.print();
+                    system("pause");
+                    system("cls");
+                    cout << "Operator *\n";
+                    m1.print();
+                    m2.print();
+                    matrix mul = m1 * m2;
+                    mul.print();
+                    system("pause");
+                    system("cls");
+                    cout << "Operator []\n";
+                    m1.print();
+                    m1[2];
+                    system("pause");
+                    system("cls");
+                    cout << "Operator ==\n";
+                    m1.print();
+                    m2.print();
+                    bool wynik = m1==m2;
+                    cout << (wynik == 0 ? "false" : "true") << endl;
+                    system("pause");
+                    system("cls");
+                    cout << "Operator ++\n";
+                    m1.print();
+                    ++m1;
+                    m1.print();
+                    system("pause");
+                    system("cls");
+                    cout << "Operator !\n";
+                    m1.print();
+                    !m1;
+                    m1.print();
+                    !m1;
+                    system("pause");
+                    system("cls");
+                    cout << "Operator %\n";
+                    m1.print();
+                    m1 % 2;
+                    m1.print();
+                    system("pause");
+                    /*system("cls");
+                    cout << "Operator <<\n";
+                    m1.print();
+                    fstream plik;
+                    plik.open("../macierz.txt");
+                    plik<<m1;
+                    system("pause");
+                    //Sleep(2000);*/
+
+                    p = false;
+                    break;
+                }
+                
+                
                 
                 default:
                 {
